@@ -36,7 +36,7 @@ function generateNumbers(sValue, eValue) {
 
     //we want to get all numbers from start to end -- LOOP
 
-    for (let index = sValue; index < eValue; index++) {
+    for (let index = sValue; index <= eValue; index++) {
        //this will execute in a loop until index = eValue
        numbers.push(index);   
     }
