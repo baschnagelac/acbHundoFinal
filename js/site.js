@@ -23,10 +23,6 @@ function getValues() {
     }
 
 
-    //we call generateNumbers
-    let numbers = generateNumbers(startValue, endValue);
-
-
 }
 
 //generate numbers from startValue to the endValue
