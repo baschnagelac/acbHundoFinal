@@ -19,10 +19,14 @@ function getValues() {
          displayNumbers(numbers);
 
     }else{
-        alert("You must enter integers");
+        Swal.fire(
+            {
+                icon: 'error',
+                title: 'Oops!',
+                text: 'Please enter ONLY integers!'
+            }
+        );
     }
-
-
 }
 
 //generate numbers from startValue to the endValue
@@ -46,7 +50,7 @@ function displayNumbers(numbers) {
     let templateRows = "";
     for (let index = 0; index < numbers.length; index++) {
         
-        let className = "even";
+        let className = "";
         let number = numbers[index];
 
         if(number % 2 == 0){
